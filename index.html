@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kalkulator Luas dan Keliling</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Judul dari program -->
+    <h1>Kalkulator Luas dan Keliling</h1>
+
+    <!-- Membuat container -->
+    <div class="container">
+      <!-- Membuat 3 input group yaitu input bentuk, panjang, dan lebar -->
+      <div class="input-group">
+        <label for="shape">Pilih Bentuk :</label>
+        <select id="shape" onchange="showHideInput()">
+          <!-- Pemberian id agar elemen input (berupa pilihan/selection) dapat ditampung di variabel dalam JS agar bisa diproses -->
+          <!-- Memanggil fungsi validasi apakah shape yang dipilih merupakan persegi atau persegi panjang untuk membatasi hanya ada 1 input untuk shape persegi -->
+          <option value="square">Persegi</option>
+          <option value="rectangle">Persegi Panjang</option>
+        </select>
+      </div>
+      <div class="input-group" id="lengthInput">
+        <label for="length">Panjang Sisi :</label>
+        <input type="number" placeholder="(cm)" id="length" min="0" />
+      </div>
+      <div class="input-group" id="widthInput" style="display: none">
+        <label for="width">Lebar Sisi :</label>
+        <input type="number" placeholder="(cm)" id="width" min="0" />
+      </div>
+      <!-- Membuat button untuk mengaktifkan fungsi calculate saat diklik -->
+      <button class="button" onclick="calculate()">Hitung</button>
+      <!-- Membuat class result sebagai tempat akan dihasilkannya output JS setelah selesai diproses -->
+      <div class="result">
+        <p id="output_luas"></p>
+        <p id="output_keliling"></p>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
