@@ -1,0 +1,1145 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="docs/css/style.css" />
+    <style>
+      /* Custom CSS for the mobile menu */
+      .mobile-menu {
+        display: none;
+      }
+      .mobile-menu.active {
+        display: block;
+      }
+      #particles-js {
+        background-color: transparent;
+      }
+    </style>
+  </head>
+  <body
+    class="font-Poppins bg-white dark:bg-gray-900 text-gray-800 dark:text-white"
+  >
+    <!-- Header -->
+    <header
+      class="bg-white dark:bg-gray-800 p-4 fixed z-50 top-0 left-0 right-0 border-b border-black"
+    >
+      <div class="container mx-auto flex justify-between items-center">
+        <div class="text-xl font-bold">Ivander</div>
+        <nav class="hidden md:flex space-x-4">
+          <a href="#home" class="hover:text-teal-400">Home</a>
+          <a href="#about" class="hover:text-teal-400">About</a>
+          <a href="#background" class="hover:text-teal-400">Background</a>
+          <a href="#skills" class="hover:text-teal-400">Skills</a>
+          <a href="#projects" class="hover:text-teal-400">Projects</a>
+          <a href="#contact" class="hover:text-teal-400">Contact</a>
+        </nav>
+        <button id="menu-btn" class="block md:hidden focus:outline-none">
+          <svg
+            class="w-6 h-6"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16"
+            ></path>
+          </svg>
+        </button>
+      </div>
+      <div
+        id="menu"
+        class="mobile-menu bg-white dark:bg-gray-800 p-4 md:hidden"
+      >
+        <a
+          href="#"
+          class="block py-2 px-4 hover:bg-gray-200 dark:hover:bg-gray-700"
+          >Home</a
+        >
+        <a
+          href="#about"
+          class="block py-2 px-4 hover:bg-gray-200 dark:hover:bg-gray-700"
+          >About</a
+        >
+        <a
+          href="#background"
+          class="block py-2 px-4 hover:bg-gray-200 dark:hover:bg-gray-700"
+          >Background</a
+        >
+        <a
+          href="#skills"
+          class="block py-2 px-4 hover:bg-gray-200 dark:hover:bg-gray-700"
+          >Skills</a
+        >
+        <a
+          href="#projects"
+          class="block py-2 px-4 hover:bg-gray-200 dark:hover:bg-gray-700"
+          >Projects</a
+        >
+        <a
+          href="#contact"
+          class="block py-2 px-4 hover:bg-gray-200 dark:hover:bg-gray-700"
+          >Contact</a
+        >
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section
+      id="home"
+      class="relative bg-white dark:bg-gray-900 text-gray-800 dark:text-white h-screen flex items-center max-[600px]:h-fit max-[600px]:my-20"
+    >
+      <div id="particles-js" class="w-full h-full absolute z-10"></div>
+      <div
+        class="container mx-auto flex flex-col md:flex-row items-center px-4"
+      >
+        <!-- Left Side -->
+        <div class="w-full md:w-1/2 text-center md:text-left">
+          <h3
+            class="font-SourceCodePro bg-clip-text text-transparent bg-gradient-to-r from-teal-500 to-gray-800 tracking-wide text-xl md:text-2xl font-semibold mb-2"
+          >
+            Software Engineer
+          </h3>
+          <h2 class="font-Poppins text-3xl md:text-4xl font-bold mb-2">
+            Hello, I am
+          </h2>
+          <h1
+            class="font-Merriweather text-5xl md:text-5xl font-extrabold mb-4"
+          >
+            Ivander Kendrick
+          </h1>
+          <p
+            class="font-Montserrat font-light text-lg md:text-xl leading-relaxed"
+          >
+            <span
+              class="font-bold block md:inline tracking-wide uppercase bg-clip-text text-transparent bg-gradient-to-r from-teal-400 to-gray-600"
+              >strategic and logical [intj]
+            </span>
+            <br />
+            I am a programming enthusiast, with good
+            <br />
+            logical strategic thinking and problem-solving skills.
+          </p>
+        </div>
+        <!-- Right Side -->
+        <div
+          class="w-full md:w-1/2 flex justify-center md:justify-end mt-8 md:mt-0"
+        >
+          <div class="relative w-64 h-64 md:w-80 md:h-80">
+            <div
+              class="absolute inset-0 bg-teal-500 transform rounded-[0%_100%_0%_100%_/_0%_100%_0%_100%_] shadow-lg shadow-teal-800"
+            ></div>
+            <img
+              src="img/ivander_kendrick.png"
+              alt="Ivander Kendrick"
+              class="relative z-20 w-full h-full object-cover rounded-[100%_0%_100%_0%_/_100%_0%_100%_0%_] shadow-lg shadow-teal-800"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Dark Mode Toggle Button -->
+    <button
+      id="dark-mode-toggle"
+      class="fixed bottom-4 right-4 z-40 dark:bg-teal-500 bg-teal-700 text-white p-3 rounded-full shadow-lg focus:outline-none"
+    >
+      <svg
+        id="dark-mode-icon"
+        class="w-6 h-6"
+        fill="none"
+        stroke="currentColor"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M12 3v1m0 16v1m8.66-4.95l-.71-.71M5.05 6.34l-.71-.71m0 12.02l.71-.71M19.66 6.34l-.71-.71M12 7a5 5 0 100 10 5 5 0 000-10zM12 1a11 11 0 000 22 11 11 0 000-22z"
+        ></path>
+      </svg>
+    </button>
+
+    <!-- Social Links Section -->
+    <div class="fixed bottom-4 z-40 left-4 flex flex-col space-y-4">
+      <a
+        href="https://github.com/IvanderKendrick"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="bg-gray-800 dark:bg-gray-200 text-white dark:text-gray-800 p-2 rounded-full shadow-lg hover:bg-gray-700 dark:hover:bg-gray-300"
+      >
+        <img src="img/github1.png" alt="GitHub" class="w-8 h-8" />
+      </a>
+      <a
+        href="https://www.linkedin.com/in/ivander-kendrick-wijono-479b83288/"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="bg-gray-800 dark:bg-gray-200 text-white dark:text-gray-800 p-2 rounded-full shadow-lg hover:bg-gray-700 dark:hover:bg-gray-300"
+      >
+        <img src="img/linkedin.png" alt="LinkedIn" class="w-8 h-8" />
+      </a>
+      <a
+        href="/docs/CV.pdf"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="bg-gray-800 dark:bg-gray-200 text-white dark:text-gray-800 p-2 rounded-full shadow-lg hover:bg-gray-700 dark:hover:bg-gray-300"
+      >
+        <img src="img/cv.png" alt="CV" class="w-8 h-8" />
+      </a>
+    </div>
+
+    <!-- About Me Section -->
+    <section
+      id="about"
+      class="bg-gray-200 dark:bg-gray-800 text-gray-800 dark:text-white py-20"
+    >
+      <div class="container mx-auto px-4">
+        <h2
+          class="text-4xl md:text-5xl font-bold text-center mb-12 font-Merriweather"
+        >
+          About Me
+        </h2>
+        <div class="md:flex md:justify-center md:space-x-10">
+          <div class="md:w-1/3 mb-8 md:mb-0">
+            <img
+              src="img/laptop.jpg"
+              alt="Your Photo"
+              class="rounded-lg mx-auto w-2/3 md:w-full"
+            />
+          </div>
+          <div class="md:w-2/3">
+            <p
+              class="text-lg leading-relaxed mb-4 font-Roboto first-letter:text-4xl first-letter:font-Merriweather"
+            >
+              Hello! My name is Ivander Kendrick Wijono, and I am a 4th semester
+              student at Institute of Business and Informatics Kwik Kian Gie,
+              majoring in Informatics Engineering with a GPA of 3,97. I have
+              gained valuable experience through various projects, as well as
+              volunteer work in several organizations.
+            </p>
+            <p class="text-lg leading-relaxed mb-4 font-Roboto">
+              My strengths lie in logical strategic thinking and
+              problem-solving. I have experience leading teams, managing
+              projects, working together on projects, and teaching programming.
+              My skills include some of programming languages, frameworks, and
+              tools, along with teamwork, adaptability, time management,
+              leadership, communication, and fluency in Indonesian and English.
+            </p>
+            <p class="text-lg leading-relaxed font-Roboto">
+              I am passionate about Programming especially Web's Programming and
+              am eager to continue expanding my knowledge and skills. My goal is
+              to leverage my education and experience to become a versatile and
+              reliable software engineer, contributing to innovative and
+              impactful projects.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education and Organization Section -->
+    <section
+      id="background"
+      class="bg-gray-100 dark:bg-gray-800 text-gray-800 dark:text-white py-20"
+    >
+      <div class="container mx-auto px-4">
+        <h2
+          class="text-4xl md:text-5xl font-bold text-center mb-12 font-Merriweather"
+        >
+          Education and Organization
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <!-- Education Section -->
+          <div
+            class="bg-white dark:bg-gray-900 text-gray-800 dark:text-white p-6 rounded-lg shadow-lg"
+          >
+            <img
+              src="img/kkg.jpg"
+              alt="Campus"
+              class="w-full h-56 object-cover rounded-md mb-4"
+            />
+            <h3 class="text-2xl font-bold mb-2">
+              Institute of Business and Informatics Kwik Kian Gie
+            </h3>
+            <p class="text-teal-600 mb-2 font-bold font-Montserrat">
+              Informatics Engineering
+            </p>
+            <ul class="text-gray-600 dark:text-gray-300">
+              <li>• Grade: 3.97</li>
+              <li>• Receiving Adaro Foundation Scholarship.</li>
+              <li>
+                • Understand data structures and algorithms using Python and C#
+              </li>
+              <li>
+                • Understand the concept of OOP (Object-Oriented Programming)
+                using Java
+              </li>
+              <li>
+                • Experience in mobile programming using Java, Kotlin, and Dart
+                (Flutter)
+              </li>
+              <li>
+                • Mastering web programming using HTML, CSS, JavaScript,
+                Bootstrap, Tailwind, PHP, MySQL, ReactJS, NodeJS, ExpressJS,
+                Flask, NextJS
+              </li>
+            </ul>
+            <h3 class="text-2xl font-bold mb-2 mt-8">Bangkit Academy</h3>
+            <p class="text-teal-600 mb-2 font-bold font-Montserrat">
+              Cloud Computing Cohort
+            </p>
+            <ul class="text-gray-600 dark:text-gray-300">
+              <li>
+                • Developed scalable and secure backend services on Google Cloud
+                Platform (GCP), leveraging key services in computing, storage,
+                networking, and security.
+              </li>
+              <br />
+              <li>
+                • Mastered a diverse range of GCP tools, including data and
+                machine learning, SRE practices, cost optimization, and other
+                essential services to build efficient cloud solutions.
+              </li>
+              <br />
+              <li>
+                • Gained practical experience by designing GCP architectures,
+                developing backend services, deploying applications, and
+                ensuring seamless operations for team projects.
+              </li>
+              <br />
+              <li>
+                • Collaborated effectively within a team to deliver a project
+                that addresses real-world challenges, achieving successful
+                outcomes within the designated timeline.
+              </li>
+            </ul>
+            <a
+              href="https://www.linkedin.com/in/ivander-kendrick-wijono-479b83288/"
+              class="font-semibold mt-8 inline-block underline text-teal-800 hover:text-teal-600 font-Montserrat"
+              >read more (LinkedIn)</a
+            >
+          </div>
+          <!-- Organization Section -->
+          <div class="relative">
+            <div
+              class="absolute left-4 top-0 h-full border-l-4 border-teal-500"
+            ></div>
+            <div class="ml-8 space-y-8">
+              <!-- Organization 1 -->
+              <div
+                class="bg-white dark:bg-gray-900 text-gray-800 dark:text-white p-6 rounded-lg shadow-lg"
+              >
+                <h3 class="text-2xl font-bold mb-2">
+                  Google Developer Student Club
+                </h3>
+                <p class="text-teal-600 font-bold mb-2">Curriculum Officer</p>
+                <p class="text-gray-600 dark:text-gray-300">
+                  • Develop learning materials of Android Development and
+                  Machine Learning for 30 GDSC members.
+                  <br />
+                  • Collaborate with the team to develop an annual learning path
+                  for 30 GDSC members.
+                </p>
+                <a
+                  href="https://www.linkedin.com/in/ivander-kendrick-wijono-479b83288/"
+                  class="font-semibold mt-2 inline-block underline text-teal-800 hover:text-teal-600 font-Montserrat"
+                  >read more (LinkedIn)</a
+                >
+              </div>
+              <!-- Organization 4 -->
+              <div
+                class="bg-white dark:bg-gray-900 text-gray-800 dark:text-white p-6 rounded-lg shadow-lg"
+              >
+                <h3 class="text-2xl font-bold mb-2">
+                  Google Developer Groups Depok
+                </h3>
+                <p class="text-teal-600 font-bold mb-2">Front of House</p>
+                <p class="text-gray-600 dark:text-gray-300">
+                  Coordinated with a team to execute AI, ML, cloud, and Android
+                  events, achieving a 100% on-time delivery rate and enhancing
+                  participant satisfaction through effective technical
+                  operations management.
+                </p>
+                <a
+                  href="https://www.linkedin.com/in/ivander-kendrick-wijono-479b83288/"
+                  class="font-semibold mt-2 inline-block underline text-teal-800 hover:text-teal-600 font-Montserrat"
+                  >read more (LinkedIn)</a
+                >
+              </div>
+              <!-- Organization 2 -->
+              <div
+                class="bg-white dark:bg-gray-900 text-gray-800 dark:text-white p-6 rounded-lg shadow-lg"
+              >
+                <h3 class="text-2xl font-bold mb-2">Informatics Community</h3>
+                <p class="text-teal-600 font-bold mb-2">Executive Secretary</p>
+                <p class="text-gray-600 dark:text-gray-300">
+                  • Manage event administration, including the preparation and
+                  archiving of files and letters.
+                  <br />
+                  • Develop and submit proposals and activity reports for
+                  various events.
+                </p>
+                <a
+                  href="https://www.linkedin.com/in/ivander-kendrick-wijono-479b83288/"
+                  class="font-semibold mt-2 inline-block underline text-teal-800 hover:text-teal-600 font-Montserrat"
+                  >read more (LinkedIn)</a
+                >
+              </div>
+              <!-- Organization 3 -->
+              <div
+                class="bg-white dark:bg-gray-900 text-gray-800 dark:text-white p-6 rounded-lg shadow-lg"
+              >
+                <h3 class="text-2xl font-bold mb-2">Finance Group IBIKKG</h3>
+                <p class="text-teal-600 font-bold mb-2">Event Officer</p>
+                <p class="text-gray-600 dark:text-gray-300">
+                  • Led a team as chief executive to organize the event in less
+                  than one month.
+                  <br />
+                  • Coordinated all aspects of the event that attracted up to 90
+                  participants.
+                </p>
+                <a
+                  href="https://www.linkedin.com/in/ivander-kendrick-wijono-479b83288/"
+                  class="font-semibold mt-2 inline-block underline text-teal-800 hover:text-teal-600 font-Montserrat"
+                  >read more (LinkedIn)</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- My Skills Section -->
+    <section
+      id="skills"
+      class="bg-gray-100 dark:bg-gray-800 text-gray-800 dark:text-white py-20"
+    >
+      <div class="container mx-auto px-4">
+        <h2
+          class="text-4xl md:text-5xl font-bold text-center mb-12 font-Merriweather"
+        >
+          Skills
+        </h2>
+        <div
+          class="w-full h-0.5 my-12 bg-gradient-to-r from-black via-teal-600 to-black dark:bg-gradient-to-r dark:from-white dark:via-teal-600 dark:to-white"
+        ></div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <!-- Tech Stack Section -->
+          <div class="rounded-lg shadow-lg p-6 dark:bg-gray-900">
+            <h3 class="text-3xl font-bold mb-6 text-teal-600">Tech Stack</h3>
+            <div
+              class="w-full h-0.5 mb-12 bg-gradient-to-r from-black via-teal-600 to-black dark:bg-gradient-to-r dark:from-white dark:via-teal-600 dark:to-white"
+            ></div>
+            <!-- Languages -->
+            <div class="mb-8">
+              <h4 class="text-2xl font-semibold mb-4">Languages</h4>
+              <div class="flex flex-wrap gap-6">
+                <div class="flex flex-col items-center">
+                  <img
+                    src="img/html1.png"
+                    alt="Language Logo"
+                    class="w-16 h-16 mb-2"
+                  />
+                  <p class="text-gray-800 dark:text-white">HTML5</p>
+                </div>
+                <div class="flex flex-col items-center">
+                  <img
+                    src="img/css1.png"
+                    alt="Language Logo"
+                    class="w-16 h-16 mb-2"
+                  />
+                  <p class="text-gray-800 dark:text-white">CSS3</p>
+                </div>
+                <div class="flex flex-col items-center">
+                  <img
+                    src="img/javascript.png"
+                    alt="Language Logo"
+                    class="w-16 h-16 mb-2"
+                  />
+                  <p class="text-gray-800 dark:text-white">JS</p>
+                </div>
+                <div class="flex flex-col items-center">
+                  <img
+                    src="img/python.png"
+                    alt="Language Logo"
+                    class="w-16 h-16 mb-2"
+                  />
+                  <p class="text-gray-800 dark:text-white">Python</p>
+                </div>
+                <div class="flex flex-col items-center">
+                  <img
+                    src="img/cs.png"
+                    alt="Language Logo"
+                    class="w-16 h-16 mb-2"
+                  />
+                  <p class="text-gray-800 dark:text-white">C#</p>
+                </div>
+                <div class="flex flex-col items-center">
+                  <img
+                    src="img/java.png"
+                    alt="Language Logo"
+                    class="w-16 h-16 mb-2"
+                  />
+                  <p class="text-gray-800 dark:text-white">Java</p>
+                </div>
+                <div class="flex flex-col items-center">
+                  <img
+                    src="img/dart.png"
+                    alt="Language Logo"
+                    class="w-16 h-16 mb-2"
+                  />
+                  <p class="text-gray-800 dark:text-white">Dart</p>
+                </div>
+                <div class="flex flex-col items-center">
+                  <img
+                    src="img/kotlin.png"
+                    alt="Language Logo"
+                    class="w-16 h-16 mb-2"
+                  />
+                  <p class="text-gray-800 dark:text-white">Kotlin</p>
+                </div>
+                <div class="flex flex-col items-center">
+                  <img
+                    src="img/php.png"
+                    alt="Language Logo"
+                    class="w-16 h-16 mb-2"
+                  />
+                  <p class="text-gray-800 dark:text-white">PHP</p>
+                </div>
+                <div class="flex flex-col items-center">
+                  <img
+                    src="img/mysql.png"
+                    alt="Language Logo"
+                    class="w-16 h-16 mb-2"
+                  />
+                  <p class="text-gray-800 dark:text-white">MySQL</p>
+                </div>
+                <!-- Tambahkan lebih banyak item bahasa jika diperlukan -->
+              </div>
+            </div>
+            <!-- Frameworks -->
+            <div class="mb-8">
+              <h4 class="text-2xl font-semibold mb-4">Frameworks</h4>
+              <div class="flex flex-wrap gap-6">
+                <div class="flex flex-col items-center">
+                  <img
+                    src="img/flutter.png"
+                    alt="Framework Logo"
+                    class="h-16 mb-2"
+                  />
+                  <p class="text-gray-800 dark:text-white">Flutter</p>
+                </div>
+                <div class="flex flex-col items-center">
+                  <img
+                    src="img/bs.png"
+                    alt="Framework Logo"
+                    class="w-16 h-16 mb-2"
+                  />
+                  <p class="text-gray-800 dark:text-white">Bootstrap</p>
+                </div>
+                <div class="flex flex-col items-center">
+                  <img
+                    src="img/tw.png"
+                    alt="Framework Logo"
+                    class="w-16 h-16 mb-2"
+                  />
+                  <p class="text-gray-800 dark:text-white">Tailwind</p>
+                </div>
+                <div class="flex flex-col items-center">
+                  <img
+                    src="img/react.png"
+                    alt="Framework Logo"
+                    class="w-16 h-16 mb-2"
+                  />
+                  <p class="text-gray-800 dark:text-white">React JS</p>
+                </div>
+                <div class="flex flex-col items-center">
+                  <img
+                    src="img/express.png"
+                    alt="Framework Logo"
+                    class="w-16 h-16 mb-2"
+                  />
+                  <p class="text-gray-800 dark:text-white">Express JS</p>
+                </div>
+                <div class="flex flex-col items-center">
+                  <img
+                    src="img/hapi.png"
+                    alt="Framework Logo"
+                    class="w-16 h-16 mb-2"
+                  />
+                  <p class="text-gray-800 dark:text-white">Hapi</p>
+                </div>
+                <div class="flex flex-col items-center">
+                  <img
+                    src="img/flask.png"
+                    alt="Framework Logo"
+                    class="w-16 h-16 mb-2"
+                  />
+                  <p class="text-gray-800 dark:text-white">Flask</p>
+                </div>
+                <div class="flex flex-col items-center">
+                  <img
+                    src="img/next.svg"
+                    alt="Framework Logo"
+                    class="w-16 h-16 mb-2"
+                  />
+                  <p class="text-gray-800 dark:text-white">Next JS</p>
+                </div>
+                <!-- Tambahkan lebih banyak item framework jika diperlukan -->
+              </div>
+            </div>
+          </div>
+          <!-- Tools Section -->
+          <div class="rounded-lg shadow-lg p-6 dark:bg-gray-900">
+            <h3 class="text-3xl font-bold mb-6 text-teal-600">Tools</h3>
+            <div
+              class="w-full h-0.5 mb-12 bg-gradient-to-r from-black via-teal-600 to-black dark:bg-gradient-to-r dark:from-white dark:via-teal-600 dark:to-white"
+            ></div>
+            <div class="flex flex-wrap gap-6">
+              <div class="flex flex-col items-center">
+                <img src="img/vs.png" alt="Tool Logo" class="w-16 h-16 mb-2" />
+                <p class="text-gray-800 dark:text-white">VS Code</p>
+              </div>
+              <div class="flex flex-col items-center">
+                <img src="img/as.png" alt="Tool Logo" class="w-16 h-16 mb-2" />
+                <p class="text-gray-800 dark:text-white">A. Studio</p>
+              </div>
+              <div class="flex flex-col items-center">
+                <img src="img/figma.png" alt="Tool Logo" class="h-16 mb-2" />
+                <p class="text-gray-800 dark:text-white">Figma</p>
+              </div>
+              <div class="flex flex-col items-center">
+                <img
+                  src="img/firebase.png"
+                  alt="Tool Logo"
+                  class="w-16 h-16 mb-2"
+                />
+                <p class="text-gray-800 dark:text-white">Firebase</p>
+              </div>
+              <div class="flex flex-col items-center">
+                <img src="img/git.png" alt="Tool Logo" class="w-16 h-16 mb-2" />
+                <p class="text-gray-800 dark:text-white">Git</p>
+              </div>
+              <div class="flex flex-col items-center">
+                <img
+                  src="img/github1.png"
+                  alt="Tool Logo"
+                  class="w-16 h-16 mb-2"
+                />
+                <p class="text-gray-800 dark:text-white">GitHub</p>
+              </div>
+              <div class="flex flex-col items-center">
+                <img
+                  src="img/linux.png"
+                  alt="Tool Logo"
+                  class="w-16 h-16 mb-2"
+                />
+                <p class="text-gray-800 dark:text-white">Linux</p>
+              </div>
+              <div class="flex flex-col items-center">
+                <img
+                  src="img/xampp.png"
+                  alt="Tool Logo"
+                  class="w-16 h-16 mb-2"
+                />
+                <p class="text-gray-800 dark:text-white">XAMPP</p>
+              </div>
+              <div class="flex flex-col items-center">
+                <img
+                  src="img/netbeans.png"
+                  alt="Tool Logo"
+                  class="w-16 h-16 mb-2"
+                />
+                <p class="text-gray-800 dark:text-white">NetBeans</p>
+              </div>
+              <div class="flex flex-col items-center">
+                <img
+                  src="img/enterprisearchitect.png"
+                  alt="Tool Logo"
+                  class="w-16 h-16 mb-2"
+                />
+                <p class="text-gray-800 dark:text-white">E.Architect</p>
+              </div>
+              <div class="flex flex-col items-center">
+                <img src="img/gcp.png" alt="Tool Logo" class="w-16 h-16 mb-2" />
+                <p class="text-gray-800 dark:text-white">GCP</p>
+              </div>
+              <div class="flex flex-col items-center">
+                <img
+                  src="img/postman.svg"
+                  alt="Tool Logo"
+                  class="w-16 h-16 mb-2"
+                />
+                <p class="text-gray-800 dark:text-white">Postman</p>
+              </div>
+              <!-- Tambahkan lebih banyak item tools jika diperlukan -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section
+      id="projects"
+      class="dark:bg-gray-900 dark:text-white bg-white text-gray-800 py-20"
+    >
+      <div class="container mx-auto px-4">
+        <h2
+          class="text-4xl md:text-5xl font-bold text-center mb-12 font-Merriweather"
+        >
+          Projects
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Project Capstone -->
+          <div
+            class="bg-gray-200 dark:bg-gray-800 text-gray-800 dark:text-white p-6 rounded-lg shadow-lg"
+          >
+            <img
+              src="img/project1.png"
+              alt="Project 0"
+              class="w-full h-48 object-cover rounded-md mb-4"
+            />
+            <h3 class="text-2xl font-bold mb-2 font-Montserrat">Speechease</h3>
+            <div
+              class="w-full h-0.5 mb-2 bg-gradient-to-r from-black via-teal-600 to-black dark:bg-gradient-to-r dark:from-white dark:via-teal-600 dark:to-white"
+            ></div>
+            <p class="text-gray-400 mb-4">
+              SpeechEase is a smart app that helps children with speech
+              disorders use simple, fun and interactive therapy tools. The
+              backend of the app was developed using Express.js for the main API
+              deployed on Google App Engine, as well as a Flask (Python) based
+              machine learning model running on Google Cloud Run. This
+              architecture ensures fast communication, scalable services, and
+              optimal performance to effectively support technology-based
+              therapy.
+            </p>
+            <p class="text-gray-400 mb-4 font-Montserrat">
+              <span class="font-extrabold text-teal-600"
+                >Technologies Used:</span
+              >
+              <br />
+              NodeJS, ExpressJS, Flask, App Engine, Cloud Run, Cloud Storage,
+              Firebase
+              <br />
+              <br />
+              <span class="font-extrabold text-teal-600">Skills Learned:</span>
+              Building APIs, integrating backend services, designing Google
+              Cloud architectures to implement scalable and secure solutions,
+              deploying applications using App Engine and Cloud Run, and
+              managing databases with Firestore for real-time data
+              synchronization.
+            </p>
+            <a
+              href="https://github.com/bangkit-speechease/cloud-computing"
+              class="text-teal-400 hover:underline"
+              >View Project</a
+            >
+          </div>
+          <!-- Project 0 -->
+          <div
+            class="bg-gray-200 dark:bg-gray-800 text-gray-800 dark:text-white p-6 rounded-lg shadow-lg"
+          >
+            <img
+              src="img/project0.png"
+              alt="Project 0"
+              class="w-full h-48 object-cover rounded-md mb-4"
+            />
+            <h3 class="text-2xl font-bold mb-2 font-Montserrat">
+              Portfolio Website (NextJS Vers.)
+            </h3>
+            <div
+              class="w-full h-0.5 mb-2 bg-gradient-to-r from-black via-teal-600 to-black dark:bg-gradient-to-r dark:from-white dark:via-teal-600 dark:to-white"
+            ></div>
+            <p class="text-gray-400 mb-4">
+              A modern portfolio website built with Next.js for fast performance
+              and Aeternity UI for an elegant and responsive interface. The
+              website is designed to showcase portfolios in a professional
+              manner, equipped with seamless navigation and responsive design
+              for maximum user experience.
+            </p>
+            <p class="text-gray-400 mb-4 font-Montserrat">
+              <span class="font-extrabold text-teal-600"
+                >Technologies Used:</span
+              >
+              <br />
+              NextJS, ReactJS, Typescript
+              <br />
+              <br />
+              <span class="font-extrabold text-teal-600">Skills Learned:</span>
+              Using React Framework, create responsive & amazing component
+              helped with Aceternity UI.
+            </p>
+            <a href="#" class="text-teal-400 hover:underline">Coming Soon!</a>
+          </div>
+          <!-- Project 1 -->
+          <div
+            class="bg-gray-200 dark:bg-gray-800 text-gray-800 dark:text-white p-6 rounded-lg shadow-lg"
+          >
+            <img
+              src="img/CollageTym.png"
+              alt="Project 1"
+              class="w-full h-48 object-cover rounded-md mb-4"
+            />
+            <h3 class="text-2xl font-bold mb-2 font-Montserrat">
+              Track Your Money
+            </h3>
+            <div
+              class="w-full h-0.5 mb-2 bg-gradient-to-r from-black via-teal-600 to-black dark:bg-gradient-to-r dark:from-white dark:via-teal-600 dark:to-white"
+            ></div>
+            <p class="text-gray-400 mb-4">
+              TYM (Track Your Money) is a web app designed to help users track
+              their income, expenses, and calculate their total wealth. Users
+              can input their financial data, which is then stored in a database
+              and displayed in tables and interactive charts using Chart.js. The
+              app features a secure registration and login system built with PHP
+              and MySQL, and boasts a modern, responsive design using
+              TailwindCSS and Particle.js.
+            </p>
+            <p class="text-gray-400 mb-4 font-Montserrat">
+              <span class="font-extrabold text-teal-600"
+                >Technologies Used:</span
+              >
+              <br />
+              HTML, TailwindCSS, JavaScript, PHP, MySQL, Particle.js, Chart.js
+              <br />
+              <br />
+              <span class="font-extrabold text-teal-600">Skills Learned:</span>
+              Using JavaScript library, Display Data in Chart form
+            </p>
+            <a
+              href="https://github.com/IvanderKendrick/track-your-money"
+              class="text-teal-400 hover:underline"
+              >View Project</a
+            >
+          </div>
+          <!-- Project 3 -->
+          <div
+            class="bg-gray-200 dark:bg-gray-800 text-gray-800 dark:text-white p-6 rounded-lg shadow-lg"
+          >
+            <img
+              src="img/CollagePersonal.png"
+              alt="Project 3"
+              class="w-full h-48 object-cover rounded-md mb-4"
+            />
+            <h3 class="text-2xl font-bold mb-2 font-Montserrat">
+              Personal Website
+            </h3>
+            <div
+              class="w-full h-0.5 mb-2 bg-gradient-to-r from-black via-teal-600 to-black dark:bg-gradient-to-r dark:from-white dark:via-teal-600 dark:to-white"
+            ></div>
+            <p class="text-gray-400 mb-4">
+              The Personal Website project serves as a platform to introduce
+              myself, showcasing my interests, hobbies, and various other
+              aspects. This project, primarily developed using HTML, CSS, and
+              JavaScript, focuses on translating UI/UX designs into manual code,
+              emphasizing on creating visually appealing designs.
+            </p>
+            <p class="text-gray-400 mb-4 font-Montserrat">
+              <span class="font-extrabold text-teal-600"
+                >Technologies Used:</span
+              >
+              <br />
+              HTML, CSS, JavaScript
+              <br />
+              <br />
+              <span class="font-extrabold text-teal-600">Skills Learned:</span>
+              Translating UI/UX designs into a functional website, Showcasing
+              high-quality design implementations on a website, Understanding
+              front-end development and design principles, Manipulating the
+              Document Object Model (DOM) using JavaScript.
+            </p>
+            <a
+              href="https://github.com/IvanderKendrick/personal-web"
+              class="text-teal-400 hover:underline"
+              >View Project</a
+            >
+          </div>
+          <!-- Project 2 -->
+          <div
+            class="bg-gray-200 dark:bg-gray-800 text-gray-800 dark:text-white p-6 rounded-lg shadow-lg"
+          >
+            <img
+              src="img/CollagePiru.png"
+              alt="Project 2"
+              class="w-full h-48 object-cover rounded-md mb-4"
+            />
+            <h3 class="text-2xl font-bold mb-2 font-Montserrat">Piru</h3>
+            <div
+              class="w-full h-0.5 mb-2 bg-gradient-to-r from-black via-teal-600 to-black dark:bg-gradient-to-r dark:from-white dark:via-teal-600 dark:to-white"
+            ></div>
+            <p class="text-gray-400 mb-4">
+              PiRu (Pinjam Ruangan) is a web app developed to streamline the
+              room booking process at our campus, replacing the inefficient
+              paper-based system. The app allows users to log in as either
+              students (borrowers) or admins (approvers). Students can submit
+              room booking requests through a form, and admins can approve or
+              reject these requests. The app features robust authentication and
+              authorization systems to ensure secure and efficient management of
+              room bookings.
+            </p>
+            <p class="text-gray-400 mb-4 font-Montserrat">
+              <span class="font-extrabold text-teal-600"
+                >Technologies Used:</span
+              >
+              <br />
+              HTML, CSS, JavaScript, PHP, MySQL
+              <br />
+              <br />
+              <span class="font-extrabold text-teal-600">Skills Learned:</span>
+              Collaborating on a project using Git and GitHub
+            </p>
+            <a
+              href="https://github.com/IvanderKendrick/Piru-Application"
+              class="text-teal-400 hover:underline"
+              >View Project</a
+            >
+          </div>
+          <!-- Project 4 -->
+          <div
+            class="bg-gray-200 dark:bg-gray-800 text-gray-800 dark:text-white p-6 rounded-lg shadow-lg"
+          >
+            <img
+              src="img/CollageCollege.png"
+              alt="Project 4"
+              class="w-full h-48 object-cover rounded-md mb-4"
+            />
+            <h3 class="text-2xl font-bold mb-2 font-Montserrat">
+              College Website
+            </h3>
+            <p class="text-gray-400 mb-4">
+              The College Website project was a college assignment where I was
+              tasked with creating a frontend for the campus website. Through
+              this project, I learned to translate UI/UX designs into code,
+              focusing on implementing various CSS properties for responsiveness
+              and creating a visually appealing web design. Additionally, I
+              gained experience in manipulating the Document Object Model (DOM)
+              using JavaScript.
+            </p>
+            <p class="text-gray-400 mb-4 font-Montserrat">
+              <span class="font-extrabold text-teal-600"
+                >Technologies Used:</span
+              >
+              <br />
+              HTML, CSS, JavaScript
+              <br />
+              <br />
+              <span class="font-extrabold text-teal-600">Skills Learned:</span>
+              Manipulating the Document Object Model (DOM) using JavaScript,
+              Implementing CSS for layouting, Creating responsive and adaptive
+              designs using CSS.
+            </p>
+            <a
+              href="https://github.com/IvanderKendrick/college-website"
+              class="text-teal-400 hover:underline"
+              >View Project</a
+            >
+          </div>
+          <!-- Project 5 -->
+          <div
+            class="bg-gray-200 dark:bg-gray-800 text-gray-800 dark:text-white p-6 rounded-lg shadow-lg"
+          >
+            <img
+              src="img/CollageSangkuriang.png"
+              alt="Project 5"
+              class="w-full h-48 object-cover rounded-md mb-4"
+            />
+            <h3 class="text-2xl font-bold mb-2 font-Montserrat">Sangkuriang</h3>
+            <p class="text-gray-400 mb-4">
+              Sangkuriang is a mobile application developed using Dart (Flutter)
+              and Firebase. It is the result of my freelance work, where I was
+              commissioned to create an app that connects to hardware capable of
+              detecting gas leaks. The app receives leak notifications and
+              allows users to register, log in anonymously, sign in with Google,
+              and perform regular logins.
+            </p>
+            <p class="text-gray-400 mb-4 font-Montserrat">
+              <span class="font-extrabold text-teal-600"
+                >Technologies Used:</span
+              >
+              <br />
+              Dart (Flutter), Firebase
+              <br />
+              <br />
+              <span class="font-extrabold text-teal-600">Skills Learned:</span>
+              Developing Android applications using Flutter, Integrating backend
+              services using Firebase, Implementing user authentication features
+              such as login, register, and logout.
+            </p>
+            <a
+              href="https://github.com/IvanderKendrick/sangkuriang"
+              class="text-teal-400 hover:underline"
+              >View Project</a
+            >
+          </div>
+          <!-- Project 6 -->
+          <div
+            class="bg-gray-200 dark:bg-gray-800 text-gray-800 dark:text-white p-6 rounded-lg shadow-lg"
+          >
+            <img
+              src="img/CollageDoes.png"
+              alt="Project 6"
+              class="w-full h-48 object-cover rounded-md mb-4"
+            />
+            <h3 class="text-2xl font-bold mb-2 font-Montserrat">Doe's</h3>
+            <p class="text-gray-400 mb-4">
+              Does is a Flutter application developed for a college assignment,
+              aimed at implementing APIs within a Flutter application. The app
+              serves as a todo list, weather, and location app. It features user
+              authentication (login/logout), location detection, and tracking
+              weather based on the user's location.
+            </p>
+            <p class="text-gray-400 mb-4 font-Montserrat">
+              <span class="font-extrabold text-teal-600"
+                >Technologies Used:</span
+              >
+              <br />
+              Dart (Flutter), Firebase
+              <br />
+              <br />
+              <span class="font-extrabold text-teal-600">Skills Learned:</span>
+              Utilizing location and weather APIs in mobile applications,
+              Implementing user authentication using Firebase for login and
+              logout functionality.
+            </p>
+            <a
+              href="https://github.com/IvanderKendrick/weather-todo-flutter"
+              class="text-teal-400 hover:underline"
+              >View Project</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section
+      id="contact"
+      class="bg-gray-200 dark:bg-gray-800 text-gray-800 dark:text-white py-20"
+    >
+      <div class="container mx-auto px-4">
+        <h2
+          class="text-4xl md:text-5xl font-bold text-center mb-12 font-Merriweather"
+        >
+          Contact
+        </h2>
+        <div class="max-w-lg mx-auto">
+          <form
+            action="https://formsubmit.co/ken356750@gmail.com"
+            method="POST"
+            class="dark:bg-gray-900 bg-gray-300 p-8 rounded-lg shadow-lg"
+          >
+            <div class="mb-6">
+              <label
+                for="name"
+                class="block text-sm font-medium text-gray-800 dark:text-gray-300 mb-2"
+                >Name</label
+              >
+              <input
+                type="text"
+                id="name"
+                name="name"
+                required
+                class="w-full px-4 py-2 bg-gray-400 dark:bg-gray-800 text-white rounded-md focus:outline-none focus:ring-2 focus:ring-teal-500"
+              />
+            </div>
+            <div class="mb-6">
+              <label
+                for="email"
+                class="block text-sm font-medium text-gray-800 dark:text-gray-300 mb-2"
+                >Email</label
+              >
+              <input
+                type="email"
+                id="email"
+                name="email"
+                required
+                class="w-full px-4 py-2 bg-gray-400 dark:bg-gray-800 text-white rounded-md focus:outline-none focus:ring-2 focus:ring-teal-500"
+              />
+            </div>
+            <div class="mb-6">
+              <label
+                for="subject"
+                class="block text-sm font-medium text-gray-800 dark:text-gray-300 mb-2"
+                >Subject</label
+              >
+              <input
+                type="text"
+                id="subject"
+                name="subject"
+                required
+                class="w-full px-4 py-2 bg-gray-400 dark:bg-gray-800 text-white rounded-md focus:outline-none focus:ring-2 focus:ring-teal-500"
+              />
+            </div>
+            <div class="mb-6">
+              <label
+                for="message"
+                class="block text-sm font-medium text-gray-800 dark:text-gray-300 mb-2"
+                >Message</label
+              >
+              <textarea
+                id="message"
+                name="message"
+                required
+                rows="4"
+                class="w-full px-4 py-2 bg-gray-400 dark:bg-gray-800 text-white rounded-md focus:outline-none focus:ring-2 focus:ring-teal-500"
+              ></textarea>
+            </div>
+            <div class="text-center">
+              <button
+                type="submit"
+                name="submit"
+                class="bg-teal-500 hover:bg-teal-400 text-white font-bold py-2 px-4 rounded"
+              >
+                Send Message
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer
+      class="dark:bg-gray-900 dark:text-gray-400 bg-gray-400 text-gray-900 py-6"
+    >
+      <div class="container mx-auto text-center">
+        <p>&copy; 2024 Ivander Kendrick Wijono</p>
+        <div class="mt-4">
+          <a
+            href="https://www.linkedin.com/in/ivander-kendrick-wijono-479b83288/"
+            class="text-teal-800 dark:text-teal-400 hover:text-teal-300 mx-2"
+            target="_blank"
+            rel="noopener noreferrer"
+            >LinkedIn</a
+          >
+          <a
+            href="https://github.com/ivanderkendrick"
+            class="text-teal-800 dark:text-teal-400 hover:text-teal-300 mx-2"
+            target="_blank"
+            rel="noopener noreferrer"
+            >GitHub</a
+          >
+        </div>
+      </div>
+    </footer>
+    <script src="docs/script.js"></script>
+    <!-- scripts -->
+    <script src="particles.js"></script>
+    <script src="docs/js/app.js"></script>
+  </body>
+</html>
